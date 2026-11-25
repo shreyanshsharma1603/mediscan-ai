@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: radial-gradient(circle at 12% 0%, rgba(20, 184, 166, 0.12), transparent 40%),
+      radial-gradient(circle at 88% 12%, rgba(6, 182, 212, 0.1), transparent 38%),
+      #060d1b;
+    min-height: 100vh;
+    color: #f8fafc;
+  }
+}
+
+.glass-card {
+  background: linear-gradient(145deg, rgba(15, 29, 54, 0.85), rgba(9, 19, 38, 0.92));
+  border: 1px solid rgba(56, 189, 248, 0.14);
+  backdrop-filter: blur(12px);
+}
+
+.glass-card-hover {
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(34, 211, 238, 0.35);
+  box-shadow: 0 12px 32px -12px rgba(6, 182, 212, 0.22);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #071022;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 9999px;
+}

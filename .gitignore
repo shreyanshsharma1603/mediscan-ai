@@ -1,0 +1,24 @@
+# Environments & dependencies
+.venv/
+.tools/
+node_modules/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets & local runtime data
+.env
+backend/.env
+backend/data/
+backend/uploads/
+*.db
+*.sqlite3
+*.log
+
+# Compiled local binaries (built via setup script)
+backend/ocr_helper/mediscan-ocr
+
+# OS
+.DS_Store
